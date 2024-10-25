@@ -1,1 +1,1 @@
-web: python manage.py makemigration && gunicorn taskmate.wsgi
+web: python manage.py makemigration && python manage.py migration gunicorn taskmate.wsgi
